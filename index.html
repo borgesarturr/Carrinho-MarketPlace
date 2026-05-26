@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Wuzz Store</h1>
+    </header>
+
+    <section>
+        <div>
+            <h3>Camisa Preta - R$: 99,99</h3>
+            <!-- O 'data-produto' guarda a informação que o JS vai ler -->
+            <button class="btn-adicionar" data-produto="camisa preta">Adicionar</button>
+        </div>
+        <div>
+            <h3>Boné Preto - R$: 159.90</h3>
+            <button class="btn-adicionar" data-produto="bone preto">Adicionar</button>
+        </div>
+        <div>
+            <h3>Moleton - R$: 199</h3>
+            <button class="btn-adicionar" data-produto="moleton">Adicionar</button>
+        </div>
+        <div>
+            <h3>Jaqueta Couro - R$: 399</h3>
+            <button class="btn-adicionar" data-produto="jaqueta couro">Adicionar</button>
+        </div>
+    </section>
+
+    <!-- Área para exibir o total que criamos antes -->
+    <section id="area-carrinho">
+        <h2>Seu Carrinho</h2>
+        <p id="texto-total">O valor total do carrinho é: R$ 0.00</p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
