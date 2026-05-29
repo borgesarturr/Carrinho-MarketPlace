@@ -20,6 +20,13 @@ function adicionarProduto(nomeProduto) {
   }
 }
 
+// --------------------------------------------
+
+
+// --------------------------------------------
+
+
+
 function calcularTotal() {
   // Lembre-se, quando um loop for trabalhar com total, sempre começará em 0;
 
@@ -44,6 +51,11 @@ adicionarProduto("bone preto")
 adicionarProduto("moleton")
 adicionarProduto("jaqueta couro")
 
+// --------------------------------------------
+
+
+// --------------------------------------------
+
 calcularTotal()
 
 
@@ -55,6 +67,7 @@ botoes.forEach(botao => {
 
   // Aqui dentro nós vamos escutar o clique de cada um deles!
   botao.addEventListener('click', function () {
+
     // Captura o nome do produto do botão clicado
     let produtoClicado = botao.dataset.produto;
 
@@ -68,8 +81,30 @@ botoes.forEach(botao => {
 
 });
 
+// --------------------------------------------
+
+
+// --------------------------------------------
+
 document.body.style.backgroundColor = "#106EBE";
 document.body.style.textAlign = "center";
+
+// Captura o botão de limpar pelo ID que você criou
+const botaoZerar = document.getElementById('clear-btn')
+
+botaoZerar.addEventListener('click', function() {
+
+  // 1. Ao que tudo indica, chamar novamente a variável carrinho, faz zerar no navegador.
+  carrinho = [];
+
+  // 2. Avisa qeu funcionou!
+  console.log("O carrinho foi zerado!");
+
+  // 3. Recalcula o total para atualizar a tela do navegador
+  calcularTotal()
+
+
+});
 
 
 
