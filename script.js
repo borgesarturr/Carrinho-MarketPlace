@@ -1,7 +1,7 @@
 let produtos = [
-  { produto: "camisa preta", preco: 99.99, imagem: "img-01.jpeg" }, // Corrigido aqui!
+  { produto: "camisa preta", preco: 99.99, imagem: "img-04.jpeg" }, // Corrigido aqui!
   { produto: "bone preto", preco: 159.90, imagem: "img-02.jpeg" },
-  { produto: "moleton", preco: 199.00, imagem: "img-04.jpeg" }, // <--- Imagem adicionada aqui!
+  { produto: "moleton", preco: 199.00, imagem: "img-01.jpeg" }, // <--- Imagem adicionada aqui!
   { produto: "jaqueta couro", preco: 399.00, imagem: "img-03.jpeg" }
 ];
 
