@@ -1,8 +1,8 @@
 let produtos = [
-  { produto: "camisa preta", preco: 99.99 },
-  { produto: "bone preto", preco: 159.90 },
-  { produto: "moleton", preco: 199.00 },
-  { produto: "jaqueta couro", preco: 399.00 }
+  { produto: "camisa preta", preco: 99.99, imagem: "img-01.jpeg" }, // Corrigido aqui!
+  { produto: "bone preto", preco: 159.90, imagem: "img-02.jpeg" },
+  { produto: "moleton", preco: 199.00, imagem: "img-04.jpeg" }, // <--- Imagem adicionada aqui!
+  { produto: "jaqueta couro", preco: 399.00, imagem: "img-03.jpeg" }
 ];
 
 let carrinho = [];
@@ -46,11 +46,6 @@ function calcularTotal() {
 
 }
 
-adicionarProduto("camisa preta")
-adicionarProduto("bone preto")
-adicionarProduto("moleton")
-adicionarProduto("jaqueta couro")
-
 // --------------------------------------------
 
 
@@ -86,8 +81,7 @@ botoes.forEach(botao => {
 
 // --------------------------------------------
 
-document.body.style.backgroundColor = "#106EBE";
-document.body.style.textAlign = "center";
+
 
 // Captura o botão de limpar pelo ID que você criou
 const botaoZerar = document.getElementById('clear-btn')
@@ -105,9 +99,3 @@ botaoZerar.addEventListener('click', function() {
 
 
 });
-
-
-
-
-
-

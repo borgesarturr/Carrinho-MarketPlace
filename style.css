@@ -1,11 +1,112 @@
+/* Configurações de Cores e Fontes */
 body {
-    background: #106EBE;
-    text-align: center;
-    
-    
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #000000; /* Mantive a cor de fundo original do seu script */
+  color: #333;
+  margin: 0;
+  padding: 40px 20px;
+  text-align: center;
 }
 
-section {
-    margin: auto;
-    text-align: center;
+h1 {
+  color: #ffffff;
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Grid Responsivo da Vitrine (Organiza os 4 produtos lado a lado) */
+.vitrine-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto 40px auto;
+}
+
+/* Card de Cada Produto */
+.produto-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+/* Efeito sutil ao passar o mouse no produto */
+.produto-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* Controle do tamanho das Imagens/Ícones */
+.produto-imagem {
+  width: 130px;
+  height: 130px;
+  object-fit: contain; /* Garante que o ícone não fique esticado ou cortado */
+  margin-bottom: 15px;
+}
+
+/* Textos do Produto */
+.produto-nome {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 8px;
+}
+
+.produto-preco {
+  color: #27ae60;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+/* Estilo Geral dos Botões */
+button {
+  width: 100%;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 0.9rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+/* Painel Inferior do Carrinho (Total e Zerar) */
+.carrinho-painel {
+  background-color: #ffffff;
+  display: inline-block;
+  padding: 25px 50px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  margin-top: 20px;
+}
+
+#texto-total {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #2c3e50;
+  margin: 0 0 15px 0;
+}
+
+/* Botão Vermelho de Limpar */
+#clear-btn {
+  background-color: #e74c3c;
+  width: auto;
+  padding: 10px 25px;
+}
+
+#clear-btn:hover {
+  background-color: #c0392b;
 }

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shopping Cart</title>
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -14,23 +14,41 @@
     </header>
 
     <section id=>
-        <div>
-            <h3>Camisa Preta - R$: 99,99</h3>
-            <!-- O 'data-produto' guarda a informação que o JS vai ler -->
-            <button class="btn-adicionar" data-produto="camisa preta">Adicionar</button>
-        </div>
-        <div>
-            <h3>Boné Preto - R$: 159.90</h3>
-            <button class="btn-adicionar" data-produto="bone preto">Adicionar</button>
-        </div>
-        <div>
-            <h3>Moleton - R$: 199</h3>
-            <button class="btn-adicionar" data-produto="moleton">Adicionar</button>
-        </div>
-        <div>
-            <h3>Jaqueta Couro - R$: 399</h3>
-            <button class="btn-adicionar" data-produto="jaqueta couro">Adicionar</button>
-        </div>
+        <main class="vitrine-container">
+
+            <!-- Produto 1: Camisa Preta -->
+            <div class="produto-card">
+                <img id="img-camisa" src="img-01.jpeg" alt="Camisa Preta" class="produto-imagem">
+                <div class="produto-nome">Camisa Preta</div>
+                <div class="produto-preco">R$ 99,99</div>
+                <button class="btn-adicionar" data-produto="camisa preta">Adicionar ao Carrinho</button>
+            </div>
+
+            <!-- Produto 2: Boné Preto -->
+            <div class="produto-card">
+                <img id="img-bone" src="img-02.jpeg" alt="Boné Preto" class="produto-imagem">
+                <div class="produto-nome">Boné Preto</div>
+                <div class="produto-preco">R$ 159,90</div>
+                <button class="btn-adicionar" data-produto="bone preto">Adicionar ao Carrinho</button>
+            </div>
+
+            <!-- Produto 3: Moletom -->
+            <div class="produto-card">
+                <img id="img-moleton" src="img-04.jpeg" alt="Moletom" class="produto-imagem">
+                <div class="produto-nome">Moletom</div>
+                <div class="produto-preco">R$ 199,00</div>
+                <button class="btn-adicionar" data-produto="moleton">Adicionar ao Carrinho</button>
+            </div>
+
+            <!-- Produto 4: Jaqueta de Couro -->
+            <div class="produto-card">
+                <img id="img-jaqueta" src="img-03.jpeg" alt="Jaqueta Couro" class="produto-imagem">
+                <div class="produto-nome">Jaqueta de Couro</div>
+                <div class="produto-preco">R$ 399,00</div>
+                <button class="btn-adicionar" data-produto="jaqueta couro">Adicionar ao Carrinho</button>
+            </div>
+
+        </main>
     </section>
 
     <!-- Área para exibir o total que criamos antes -->
